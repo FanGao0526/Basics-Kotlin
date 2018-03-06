@@ -2,16 +2,22 @@
  * We declare a package-level function main which returns Unit and takes
  * an Array of strings as a parameter. Note that semicolons are optional.
  */
+fun getUnsignedByte(value: Byte): Int {
+    return value.toInt() and 0xFF
+}
 
 
-val sample1:Byte = 0x3A
-var sample2:Byte = 58
+//val sample1:Byte = 0x3A
+val sample1= getUnsignedByte(0x3A)
+//var sample2:Byte = 58
+var sample2=getUnsignedByte(58)
+
 var heartRate:Int = 85
 var deposits:Double = 135002796.0
-//val acceleration:Float = 9.800
-val acceleration:Double = 9.800
-//var mass:Float = 14.6
-var mass:Double = 14.6
+val acceleration:Float = 9.800f
+//val acceleration:Double = 9.800
+var mass:Float = 14.6f
+//var mass:Double = 14.6
 var distance:Double = 129.763001
 var lost:Boolean = true
 var expensive:Boolean = true
